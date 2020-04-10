@@ -15,7 +15,7 @@ body{
     height:70%;
     background:#FFF;
     display: flex;
-    
+    box-shadow: .5px .5px 10px  black;
 }
 .left-panel{
     width:50%;
@@ -29,7 +29,7 @@ body{
     
 }
 .right-panel h1{
-    font-size:2vw;
+    font-size:25px;
     text-transform: uppercase;
     padding:0;
     margin:0;    
@@ -38,20 +38,22 @@ body{
     padding:0;
     margin-top:0; 
     margin-bottom: 20px;
-    font-size:1vw;
+    font-size:15px;
     font-weight:400;
     color:rgb(151, 151, 151);
+   
 }
 .right-panel input{
     margin: 10px 0;
     padding:3px 0;
     width:100%;
     border:0;
-    border-bottom: 1.5px solid rgb(175, 174, 174);;
+    border-bottom:1px solid rgb(151, 151, 151);
 }
 
 .submit-btn{
-    border: 2px solid #000 !important;
+    border: 1px solid #000 !important;
+    box-shadow: none;
     border-radius: 15px;
     width: 100px !important;
     font-weight: 900;
@@ -61,6 +63,34 @@ body{
 .submit-btn:hover{
     background:linear-gradient(90deg, rgb(121, 121, 238), rgb(170, 87, 218));
     color:#FFF;
-    border:none !important;
+    border:0 !important;
     cursor: pointer;
+}
+
+@media only screen and (max-width:850px){
+    .login-panel{
+        width:70%;  
+    }
+    .right-panel h1{
+        font-size:22px;       
+    }
+    .right-panel p{
+        font-size:13px;
+    }
+}
+@media only screen and (max-width:600px){
+    .login-panel{
+        width:80%;  
+        height:90%;
+        flex-direction: column;
+    }
+    .left-panel{
+        width:100%;
+        height:400px;
+    }
+    .right-panel{
+        width:85%;
+        height:50%;
+        padding:20px 30px;
+    }
 }
